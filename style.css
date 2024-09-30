@@ -31,6 +31,21 @@ button {
   justify-content: center;
 }
 
+button:active {
+  background: white;
+  color: #3882f6;
+  border: 0.5px solid #3882f6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: #3882f6;
+}
+
 .header {
   height: 50px;
   background: #1f2937;
@@ -93,7 +108,7 @@ h2 {
   margin: 2rem auto 0 auto;
 }
 .modes-flight {
-  height: 60vh;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -105,8 +120,20 @@ h2 {
 .modes-flight img {
   width: 250px;
   height: 250px;
+  position: relative;
   border: 2px solid #1f2937;
   border-radius: 10px;
+}
+
+.modes-flight img:hover {
+  width: 800px;
+  height: auto;
+  display: block;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-animation-property: all;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease;
 }
 
 .box {
